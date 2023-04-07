@@ -1,0 +1,26 @@
+.confiBtn {
+    border: none;
+    background-color: #618685;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.confiBtn:hover {
+    background-color: white;
+}
+
+.viewback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.box {
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+  }
