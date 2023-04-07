@@ -14,14 +14,7 @@ export default function AuthProvider({ children }) {
     (async () => {
       setLoading(false);
     })();
-    // const socket = new WebSocket("wss://172.105.39.25:8080");
-    // socket.addEventListener("open", (event) => {
-    //   console.log("WebSocket connection is open");
-    // });
-    // setWebSocket(socket);
-    // return () => {
-    //   socket.close();
-    // };
+    
   }, []);
 
   useEffect(() => {
@@ -29,7 +22,7 @@ export default function AuthProvider({ children }) {
       if (!login) return;
       console.log("Websocket connecting...");
       setTimeout(() => {
-        const socket = new WebSocket("wss://localhost:8080");
+        const socket = new WebSocket("wss://170.187.254.59:8080");
         socket.addEventListener("open", (event) => {
           console.log("WebSocket connection is open");
         });
